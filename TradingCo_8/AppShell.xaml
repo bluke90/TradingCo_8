@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="TradingCo.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:TradingCo"
+    Shell.FlyoutBehavior="Disabled"
+    Shell.TabBarIsVisible="True"
+    Shell.TabBarDisabledColor="White"
+    Shell.TabBarUnselectedColor="White"
+    BackgroundColor="{StaticResource Primary}"
+    Shell.TitleColor="Black">
+
+    <TabBar>
+        <Tab Title="Market"
+             Icon="market_icon.png">
+            <ShellContent
+                Title="Market"
+                ContentTemplate="{DataTemplate local:MainPage}"
+                Route="MainPage"/>
+        </Tab>
+        <Tab 
+            Title="Warehouse"
+            Icon="warehouse_icon.png">
+            <ShellContent
+                Title="Warehouse"
+                ContentTemplate="{DataTemplate local:WarehousePage}"
+                Route="WarehousePage" />
+        </Tab>
+        <Tab 
+            Title="Account"
+            Icon="account_icon.png">
+            <ShellContent
+                Title="Account"
+                ContentTemplate="{DataTemplate local:AccountPage}"
+                Route="AccountPage" />
+        </Tab>
+        <Tab 
+            Title="Settings"
+            Icon="settings_icon.png">
+            <ShellContent
+                Title="Settings"
+                ContentTemplate="{DataTemplate local:SettingsPage}"
+                Route="SettingsPage" />
+        </Tab>
+    </TabBar>
+
+</Shell>

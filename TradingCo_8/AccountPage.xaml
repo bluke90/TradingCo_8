@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TradingCo.AccountPage"
+             Title="Account"
+             BackgroundColor="{StaticResource DarkGray}">
+
+
+    <Grid
+        Padding="10,10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="150"/>
+        </Grid.ColumnDefinitions>
+
+        <Image
+            Source="bankicon.png"
+            Background="LimeGreen"
+            WidthRequest="100"
+            HeightRequest="100"
+            Grid.Column="0"
+            Grid.Row="0"/>
+        
+        <StackLayout Orientation="Vertical" Spacing="10"
+                    Grid.Column="1"
+                   Grid.Row="0">
+            <Label 
+                    x:Name="accBalance"
+                    Text="Account Balance: $"
+                   TextColor="{StaticResource Primary}"
+                   FontSize="18"
+                   FontFamily="RobotoCondensed-Semibold"/>
+            <Label 
+                    x:Name="lastAccBalance"
+                    Text="Last Balance: $"
+                    TextColor="{StaticResource Primary}"
+                    FontSize="18"
+                    FontFamily="RobotoCondensed-Semibold"
+                    Grid.Column="1"
+                    Grid.Row="0"/>
+            
+        </StackLayout>
+
+        <Label
+            Text="Transactions:"
+            FontSize="20"
+            FontFamily="RobotoCondensed-Semibold"
+            TextColor="White"
+            Grid.Column="0"
+            Grid.Row="1"/>
+
+        <ScrollView
+            Margin="-5,20"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            Grid.Row="2"
+            Orientation="Vertical">
+
+            <StackLayout 
+                Orientation="Vertical"
+                x:Name="transactionStack"
+                Spacing="1">
+            
+            
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+    
+</ContentPage>

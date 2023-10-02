@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TradingCo.SettingsPage"
+             Title="Settings"
+             BackgroundColor="{StaticResource DarkGray}">
+
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackLayout Orientation="Horizontal"
+                     Grid.Row="0">
+            
+        </StackLayout>
+
+        <ScrollView Grid.Row="1">
+            <StackLayout Orientation="Vertical" Spacing="1">
+                <Button Text="Reset Game Data"
+                        BorderColor="{StaticResource LightGray}"
+                        BorderWidth="2"
+                        CornerRadius="0"
+                        BackgroundColor="{StaticResource DarkGray}"
+                        HorizontalOptions="Fill"/>
+            </StackLayout>
+        </ScrollView>
+
+
+    </Grid>
+    
+    
+</ContentPage>
