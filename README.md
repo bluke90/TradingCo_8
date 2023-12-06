@@ -10,7 +10,7 @@
 
 **Goal of the application** 
 ==============================================================================================
-The primary goals of developing this application and to provide users
+The primary goals of developing this application are to provide users
 with a comprehensive understanding of fundamental economic principles. Buy low, sell high.
 By employing interactive and engaging features, the application strives to make the learning
 process enjoyable and accessible to a wide audience.
